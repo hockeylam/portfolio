@@ -1,13 +1,139 @@
+/* General Styling */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Default background for sections */
+  color: tan;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  margin: 0;
+}
+
+.index-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  background-color: #fdf5e6;
+  color: black;
+}
+
+.index-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.left-section {
+  flex: 1;
+  text-align: center;
+  margin-left: 100px; /* Moves the entire section slightly to the right */
+}
+
+.left-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensure buttons align to the left */
+  gap: 15px;
+  margin-left: 100px; /* Moves the entire section slightly to the right */
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1.5rem; /* Larger initial size */
+  cursor: pointer;
+  text-align: left;
+  padding: 10px 20px;
+  transition: transform 0.2s ease, margin 0.2s ease; /* Smooth growth and spacing */
+}
+
+.scroll-button:hover {
+  transform: scale(1.2); /* Grow on hover */
+  margin-bottom: 10px; /* Nudge other buttons away */
+}
+
+/* Sections Below Index */
+.sections-container {
+  background-color: #302e2d; /* Default background for the sections */
+} 
+
+/* Individual Section Styling */
+.about-section {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: tan;
+  background-color: #211f1e; /* Custom background for About section */
+}
+
+.skills-section {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: tan;
+  background-color: #302e2d; /* Custom background for Skills section */
+}
+
+.experiences-section {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: tan;
+  background-color: #211f1e; /* Custom background for Experiences section */
+}
+
+.contact-section {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  background-color: #947b6f; /* Custom background for Contact section */
+}
+
+/* Add extra space between sections for scroll testing */
+.section:not(:last-child) {
+  margin-bottom: 50px; /* Extra space between sections */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .index-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-section {
+    align-items: center;
+  }
 }
