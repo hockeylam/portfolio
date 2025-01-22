@@ -8,6 +8,7 @@ body {
 
 h1 {
   margin: 0;
+  font-family: "Outfit", sans-serif;
 }
 
 .index-container {
@@ -64,6 +65,7 @@ h1 {
   text-align: left;
   padding: 10px 20px;
   transition: transform 0.2s ease, margin 0.2s ease; /* Smooth growth and spacing */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .scroll-button:hover {
@@ -86,6 +88,7 @@ h1 {
   font-size: 2rem;
   color: tan;
   background-color: #211f1e; /* Custom background for About section */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .skills-section {
@@ -97,6 +100,7 @@ h1 {
   font-size: 2rem;
   color: tan;
   background-color: #302e2d; /* Custom background for Skills section */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .experiences-section {
@@ -108,6 +112,7 @@ h1 {
   font-size: 2rem;
   color: tan;
   background-color: #211f1e; /* Custom background for Experiences section */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .contact-section {
@@ -119,12 +124,11 @@ h1 {
   font-size: 2rem;
   color: black;
   background-color: #947b6f; /* Custom background for Contact section */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 /* Add extra space between sections for scroll testing */
-.section:not(:last-child) {
-  margin-bottom: 50px; /* Extra space between sections */
-}
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
