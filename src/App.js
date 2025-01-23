@@ -30,7 +30,19 @@ const App = () => {
       {/* Content Sections */}
       <div className="sections-container">
         <div id="about" className="section about-section">About Section</div>
-        <div id="skills" className="section skills-section">Skills Section</div>
+        <div id="skills" className="section skills-section">
+          <h2 className="section-title">Skills Section</h2>
+          <div className="skills-container">
+            <div className="skill-box">C++</div>
+            <div className="skill-box">Python</div>
+            <div className="skill-box">JavaScript</div>
+            <div className="skill-box">CSS</div>
+            <div className="skill-box">HTML</div>
+            <div className="skill-box">React Native</div>
+            <div className="skill-box">MySQL</div>
+            <div className="skill-box">React</div>
+          </div>
+        </div>
         <div id="experiences" className="section experiences-section">Experiences Section</div>
         <div id="contact" className="section contact-section">Contact Section</div>
       </div>

@@ -91,16 +91,41 @@ h1 {
   font-family: 'Titillium Web', sans-serif;
 }
 
+/* Skills Section Styling */
 .skills-section {
-  height: 100vh;
-  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack title and container vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center-align the text */
+  margin-top:40px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of skill boxes */
+  justify-content: center; /* Center the skill boxes horizontally */
+  gap: 20px; /* Add spacing between the skill boxes */
+  margin-top: 20px; /* Space between title and skill boxes */
+  margin-bottom: 120px;
+}
+
+.skill-box {
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  color: tan;
-  background-color: #302e2d; /* Custom background for Skills section */
-  font-family: 'Titillium Web', sans-serif;
+  background-color: #444; /* Dark gray background for boxes */
+  color: white; /* White text */
+  font-size: 1rem; /* Adjust font size */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+.skill-box:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: #555; /* Slightly lighter color on hover */
 }
 
 .experiences-section {
