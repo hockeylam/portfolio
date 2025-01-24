@@ -98,6 +98,7 @@ h1 {
   align-items: center; /* Center content horizontally */
   text-align: center; /* Center-align the text */
   margin-top:40px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .skills-container {
@@ -107,6 +108,11 @@ h1 {
   gap: 20px; /* Add spacing between the skill boxes */
   margin-top: 20px; /* Space between title and skill boxes */
   margin-bottom: 120px;
+}
+
+.section-title {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300; /* Lighter font weight */
 }
 
 .skill-box {
@@ -128,17 +134,72 @@ h1 {
   background-color: #555; /* Slightly lighter color on hover */
 }
 
+/* Experiences Section */
 .experiences-section {
-  height: 100vh;
-  padding: 20px;
+  height: auto;
+  padding: 40px 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  font-size: 2rem;
+  background-color: #2b2a29;
   color: tan;
-  background-color: #211f1e; /* Custom background for Experiences section */
-  font-family: 'Titillium Web', sans-serif;
 }
+
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.experience-item {
+  display: flex;
+  gap: 20px;
+  background: #383735;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  align-items: flex-start;
+}
+
+.experience-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+
+.tags-container {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #6c757d; /* Gray background */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.experience-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #d1cfcf;
+}
+
 
 .contact-section {
   height: 100vh;
