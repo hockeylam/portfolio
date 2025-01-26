@@ -79,17 +79,35 @@ h1 {
 } 
 
 /* Individual Section Styling */
+/* About Section */
 .about-section {
-  height: 100vh;
-  padding: 20px;
+  height: auto;
+  padding: 40px 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  font-size: 2rem;
+  background-color: #211f1e; /* Matches your existing About section background */
   color: tan;
-  background-color: #211f1e; /* Custom background for About section */
   font-family: 'Titillium Web', sans-serif;
 }
+
+.about-container {
+  max-width: 900px; /* Reduced content width */
+  text-align: center; /* Centers text */
+}
+
+.section-title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2.5rem; /* Larger font for the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.about-description {
+  font-size: 1.5rem; /* Increased font size for better readability */
+  line-height: 1.6; /* Adjusted line height for balance */
+  color: #d1cfcf; /* Subtle text color for better readability */
+}
+
 
 /* Skills Section Styling */
 .skills-section {
@@ -202,28 +220,93 @@ h1 {
 
 
 .contact-section {
-  height: 100vh;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  color: black;
-  background-color: #947b6f; /* Custom background for Contact section */
+  height: auto;
+  padding: 20px 0 250px; /* Adds space at the bottom while keeping the background color */
+  background-color: #947b6f;
   font-family: 'Titillium Web', sans-serif;
+  text-align: center;
 }
 
-/* Add extra space between sections for scroll testing */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
+.contact-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.contact-info p {
+  color: #d1cfcf;
+  font-size: 1rem;
+  margin: 5px 0;
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .index-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
     text-align: center;
+    align-items: center; /* Center-align content horizontally */
+    padding: 20px;
+  }
+
+  .left-section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image and title */
+  }
+
+  .profile-picture {
+    width: 200px; /* Smaller profile picture */
+    height: 200px;
+    margin-bottom: 20px; /* Add spacing below the image */
   }
 
   .right-section {
-    align-items: center;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center-align buttons */
+    margin: 0;
+    gap: 10px; /* Add space between buttons */
+  }
+
+  .scroll-button {
+    font-size: 1.2rem; /* Adjust button font size for smaller screens */
+    padding: 10px 15px; /* Adjust button padding */
+    width: auto; /* Allow buttons to size dynamically */
+    text-align: center;
+  }
+
+  /* Make description text smaller on mobile */
+  .about-description, .experience-description {
+    font-size: 1rem; /* Smaller text for descriptions */
+    line-height: 1.4; /* Adjust line height for better spacing */
+  }
+
+  /* Make containers smaller on mobile */
+  .about-container, .experiences-container, .contact-container {
+    max-width: 90%; /* Reduce width for mobile */
+    width: 100%; /* Make sure it spans the available width */
+    margin: 0 auto; /* Center-align the container */
+  }
+
+  /* Optional: Adjust padding to make the content less spaced out */
+  .about-section, .experiences-section, .contact-section {
+    padding: 20px; /* Reduced padding for smaller screens */
   }
 }
+
+

@@ -29,7 +29,14 @@ const App = () => {
 
       {/* Content Sections */}
       <div className="sections-container">
-        <div id="about" className="section about-section">About Section</div>
+        <div className="about-section">
+          <div className="about-container">
+            <h1 className="section-title">About Me</h1>
+            <p className="about-description">
+              I am a student at the Tandon School of Engineering, studying Computer Science with minors in Mathematics, Cybersecurity, and Finance. My primary interest lies in software engineering, and I have gained valuable experience through internships in the field. In my free time, I enjoy cooking and keeping a close eye on cryptocurrency markets. I'm always eager to learn and explore new opportunities in tech and finance.
+            </p>
+          </div>
+        </div>
         <div id="skills" className="section skills-section">
           <h1 className="section-title">Skills</h1>
           <div className="skills-container">
@@ -112,7 +119,26 @@ const App = () => {
           </div>
         </div>
 
-        <div id="contact" className="section contact-section">Contact Section</div>
+        <div id="contact" className="section contact-section">
+          <h1 className="section-title">Contacts</h1>
+          <div className="contact-container">
+            {/* Top Section: LinkedIn & GitHub Icons */}
+            <div className="contact-icons">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <img src="/assets/linkedin-icon.png" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <img src="/assets/github-icon.png" alt="GitHub" />
+              </a>
+            </div>
+
+            {/* Email & Phone */}
+            <div className="contact-info">
+              <p>Email: example@example.com</p>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
