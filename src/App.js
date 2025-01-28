@@ -1,6 +1,14 @@
 import React from 'react';
 import './App.css';
 
+import CPPIcon from './icons/cpp.svg';
+import PythonIcon from './icons/python.svg';
+import MySQLIcon from './icons/mysql.svg';    
+import JavaScriptIcon from './icons/javascript.svg';
+import HTMLIcon from './icons/html.svg';     
+import ReactIcon from './icons/react.svg'; 
+import CSSIcon from './icons/css.svg'; 
+
 const App = () => {
   const handleScroll = (id) => {
     const section = document.getElementById(id);
@@ -40,14 +48,27 @@ const App = () => {
         <div id="skills" className="section skills-section">
           <h1 className="section-title">Skills</h1>
           <div className="skills-container">
-            <div className="skill-box">C++</div>
-            <div className="skill-box">Python</div>
-            <div className="skill-box">JavaScript</div>
-            <div className="skill-box">CSS</div>
-            <div className="skill-box">HTML</div>
-            <div className="skill-box">React Native</div>
-            <div className="skill-box">MySQL</div>
-            <div className="skill-box">React</div>
+            <div className="skill-box">
+              <img src={CPPIcon} alt="C++" className="cpp-icon" />
+            </div>
+            <div className="skill-box">
+              <img src={PythonIcon} alt="python" className="python-icon" />
+            </div>
+            <div className="skill-box">
+              <img src={JavaScriptIcon} alt="JavaScript" className="javascript-icon" /> {/* Added JavaScript */}
+            </div>
+            <div className="skill-box">
+              <img src={CSSIcon} alt="CSS" className="css-icon" /> {/* Added CSS */}
+            </div>
+            <div className="skill-box">
+              <img src={HTMLIcon} alt="HTML" className="html-icon" /> {/* Added HTML */}
+            </div>
+            <div className="skill-box">
+              <img src={ReactIcon} alt="React" className="react-icon" /> {/* Added React */}
+            </div>
+            <div className="skill-box">
+              <img src={MySQLIcon} alt="MySQL" className="mysql-icon" /> {/* Added MySQL */}
+            </div>
           </div>
         </div>
         <div id="experiences" className="section experiences-section">

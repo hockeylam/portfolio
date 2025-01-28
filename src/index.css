@@ -115,7 +115,7 @@ h1 {
   flex-direction: column; /* Stack title and container vertically */
   align-items: center; /* Center content horizontally */
   text-align: center; /* Center-align the text */
-  margin-top:40px;
+  margin-top: 40px;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -150,6 +150,12 @@ h1 {
 .skill-box:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
   background-color: #555; /* Slightly lighter color on hover */
+}
+
+.skill-box img {
+  width: 90px; /* Adjust width to make the icons smaller */
+  height: 90px; /* Keep height proportional to width */
+  object-fit: contain; /* Ensures the icon scales correctly without distortion */
 }
 
 /* Experiences Section */
