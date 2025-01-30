@@ -49,25 +49,25 @@ const App = () => {
           <h1 className="section-title">Skills</h1>
           <div className="skills-container">
             <div className="skill-box">
-              <img src={CPPIcon} alt="C++" className="cpp-icon" />
+              <img src={CPPIcon} alt="C++" className="icon" />
             </div>
             <div className="skill-box">
-              <img src={PythonIcon} alt="python" className="python-icon" />
+              <img src={PythonIcon} alt="python" className="icon" />
             </div>
             <div className="skill-box">
-              <img src={JavaScriptIcon} alt="JavaScript" className="javascript-icon" /> {/* Added JavaScript */}
+              <img src={JavaScriptIcon} alt="JavaScript" className="icon" /> 
             </div>
             <div className="skill-box">
-              <img src={CSSIcon} alt="CSS" className="css-icon" /> {/* Added CSS */}
+              <img src={CSSIcon} alt="CSS" className="icon" /> 
             </div>
             <div className="skill-box">
-              <img src={HTMLIcon} alt="HTML" className="html-icon" /> {/* Added HTML */}
+              <img src={HTMLIcon} alt="HTML" className="icon" /> 
             </div>
             <div className="skill-box">
-              <img src={ReactIcon} alt="React" className="react-icon" /> {/* Added React */}
+              <img src={ReactIcon} alt="React" className="icon" /> 
             </div>
             <div className="skill-box">
-              <img src={MySQLIcon} alt="MySQL" className="mysql-icon" /> {/* Added MySQL */}
+              <img src={MySQLIcon} alt="MySQL" className="icon" /> 
             </div>
           </div>
         </div>
@@ -77,21 +77,20 @@ const App = () => {
             {/* Fintech Summer Internship */}
             <div className="experience-item">
               <img
-                src="/assets/fintech.png"
+                src="/assets/NVT.png"
                 alt="Fintech Internship"
                 className="experience-image"
               />
               <div className="experience-content">
                 <h3 className="experience-title">Fintech Summer Internship</h3>
                 <div className="tags-container">
-                  <div className="tag">C++</div>
-                  <div className="tag">React</div>
-                  <div className="tag">Python</div>
+                  <div className="tag">HTML</div>
+                  <div className="tag">CSS</div>
+                  <div className="tag">JavaScript</div>
                 </div>
                 <p className="experience-description">
-                  Gained hands-on experience in financial technology, developed
-                  automation tools, and collaborated with a team to improve backend
-                  systems.
+                  Worked directly under head of technology to make the company website of New Vision Technology as the sole developer. 
+                  Implemented numerous interactive and user friendly modules to help users understand our finanical product.
                 </p>
               </div>
             </div>
@@ -99,20 +98,20 @@ const App = () => {
             {/* Chameleon Wallpaper Changer */}
             <div className="experience-item">
               <img
-                src="/assets/chameleon.png"
+                src="/assets/wallpaperchanger.png"
                 alt="Chameleon Wallpaper Changer"
                 className="experience-image"
               />
               <div className="experience-content">
                 <h3 className="experience-title">Chameleon Wallpaper Changer</h3>
                 <div className="tags-container">
-                  <div className="tag">C++</div>
+                  <div className="tag">JavaScript</div>
                   <div className="tag">React</div>
-                  <div className="tag">Python</div>
+                  <div className="tag">AWS</div>
                 </div>
                 <p className="experience-description">
-                  Created a dynamic wallpaper changer application with customizable
-                  themes and automation options, using React Native and Python.
+                  Coded a AI generated Wallpaper Changer on Android. Ran tests and developed in Androidn Studio.
+                  Generated photos are made with Stable Diffusion model stored in AWS.
                 </p>
               </div>
             </div>
@@ -127,13 +126,30 @@ const App = () => {
               <div className="experience-content">
                 <h3 className="experience-title">Airport Database Design</h3>
                 <div className="tags-container">
-                  <div className="tag">C++</div>
-                  <div className="tag">React</div>
-                  <div className="tag">Python</div>
+                  <div className="tag">HTML</div>
+                  <div className="tag">MySQL</div>
+                  <div className="tag">MAMP</div>
                 </div>
                 <p className="experience-description">
-                  Designed and implemented an efficient relational database system for
-                  managing airport operations, ensuring scalability and data integrity.
+                  Designed and implemented airport databse covering staff, tickets, customers, flights and connecting airports and more. 
+                  Database ran on MAMP. CRUD was handled in mySQL.
+                </p>
+              </div>
+            </div>
+            <div className="experience-item">
+              <img
+                src="/assets/CPU.png"
+                alt="CPU Simulator (E20)"
+                className="experience-image"
+              />
+              <div className="experience-content">
+                <h3 className="experience-title">CPU simulator</h3>
+                <div className="tags-container">
+                  <div className="tag">C++</div>
+                </div>
+                <p className="experience-description">
+                  E20 is a simplified version of assembly code native to Tandon School of Engineering.
+                  In this project I simulated a CPU capably of processing E20 code, including multi-caching capabilities (L1 and L2).
                 </p>
               </div>
             </div>
