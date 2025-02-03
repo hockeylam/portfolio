@@ -8,6 +8,9 @@ import JavaScriptIcon from './icons/javascript.svg';
 import HTMLIcon from './icons/html.svg';     
 import ReactIcon from './icons/react.svg'; 
 import CSSIcon from './icons/css.svg'; 
+import LinkedInIcon from './icons/linkedin-icon.svg';
+import GithubIcon from './icons/github-icon.svg';
+
 
 const App = () => {
   const handleScroll = (id) => {
@@ -33,6 +36,7 @@ const App = () => {
             <button onClick={() => handleScroll('contact')} className="scroll-button">Contact</button>
           </div>
         </div>
+        <img src="/assets/nyu-logo.png" alt="NYU Logo" className="nyu-logo" />
       </div>
 
       {/* Content Sections */}
@@ -161,18 +165,18 @@ const App = () => {
           <div className="contact-container">
             {/* Top Section: LinkedIn & GitHub Icons */}
             <div className="contact-icons">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="contact-icon">
-                <img src="/assets/linkedin-icon.png" alt="LinkedIn" />
+              <a href="https://www.linkedin.com/in/hockey-lam-448153252/" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <img src={LinkedInIcon} alt="LinkedIn" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="contact-icon">
-                <img src="/assets/github-icon.png" alt="GitHub" />
+              <a href="https://github.com/hockeylam" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <img src={GithubIcon} alt="GitHub" />
               </a>
             </div>
 
             {/* Email & Phone */}
             <div className="contact-info">
-              <p>Email: example@example.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Email: hl4779@nyu.edu</p>
+              <p>Phone: (917)801-6903 </p>
             </div>
           </div>
         </div>

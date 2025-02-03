@@ -19,6 +19,16 @@ h1 {
   height: 100vh;
   background-color: #fdf5e6;
   color: black;
+  position: relative;
+}
+
+.nyu-logo {
+  position: absolute;
+  bottom: -12px;
+  right: 20px;
+  width: 360px; /* Adjust size as needed */
+  height: auto;
+  opacity: 0.8; /* Slight transparency */
 }
 
 .index-content {
@@ -227,7 +237,7 @@ h1 {
 
 .contact-section {
   height: auto;
-  padding: 20px 0 250px; /* Adds space at the bottom while keeping the background color */
+  padding: 20px 0 150px; /* Adds space at the bottom while keeping the background color */
   background-color: #947b6f;
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
