@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4910e46.css",
+    "main.js": "/static/js/main.1cddfcf9.js",
+    "static/js/488.9c92ff38.chunk.js": "/static/js/488.9c92ff38.chunk.js",
+    "static/media/mysql.svg": "/static/media/mysql.88631d0de40f60cec048c5f2549eaf37.svg",
+    "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
+    "static/media/cpp.svg": "/static/media/cpp.3903c781fc7f522cf861687b41d82708.svg",
+    "static/media/python.svg": "/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
+    "static/media/html.svg": "/static/media/html.e7638e3676622c76a46ece6c46136fd4.svg",
+    "static/media/css.svg": "/static/media/css.e7a9de36d9335d92932e93eb3b32deb9.svg",
+    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.9bd7e6453c3131532672b02aba2bcf26.svg",
+    "index.html": "/index.html",
+    "main.e4910e46.css.map": "/static/css/main.e4910e46.css.map",
+    "main.1cddfcf9.js.map": "/static/js/main.1cddfcf9.js.map",
+    "488.9c92ff38.chunk.js.map": "/static/js/488.9c92ff38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4910e46.css",
+    "static/js/main.1cddfcf9.js"
+  ]
+}
